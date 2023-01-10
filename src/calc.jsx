@@ -17,7 +17,7 @@ export default function ChemistryCalc(props) {
 		} else if (str[i] >= 'a' && str[i] <= 'z') {
 			element = element + str[i];
 		} else if (str[i] >= '0' && str[i] <= '9') {
-			count = count * 10 + str[i] - '0';
+			count = count + str[i] - '0';
 		}
 	}
 	if (!count) count = 1;

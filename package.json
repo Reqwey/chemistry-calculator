@@ -1,0 +1,39 @@
+{
+  "name": "chemistry-calculator",
+  "version": "1.0.0",
+  "description": "Chemistry Calculator Tool for the Web",
+  "main": "src/index.jsx",
+  "repository": "git@github.com:Reqwey/chemistry-calculator.git",
+  "author": "Reqwey <50829219+Reqwey@users.noreply.github.com>",
+  "license": "MIT",
+  "private": false,
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "dependencies": {
+    "@emotion/react": "^11.10.5",
+    "@emotion/styled": "^11.10.5",
+    "@fontsource/public-sans": "^4.5.11",
+    "@mui/joy": "^5.0.0-alpha.62",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "react-scripts": "latest"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}

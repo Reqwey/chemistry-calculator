@@ -1,19 +1,19 @@
 <!DOCTYPE html>
 <html>
 	<head>
-        <title>Chemistry Calculator</title>
+        <title>分子量计算器</title>
 	</head>
 	<body>
-        <h1>Chemistry Formula Mass Calculator</h1>
-        <p>Type in the chemical formula and it will output the formula mass for said compound. Note that the subscript (numbers) will need to be normal size. Also note it is case sensitive, so capital letters will need to stay capital and lowercase must be lower. (Like Br, or O, etc) If errors occur, most likely you spelled something wrong.</p>
-        <p>Ex : Br2 C2 H3 O2 <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;218.852</p>
+        <h1>分子量计算器</h1>
+        <p>目前必须以空格分隔每个元素</p>
+        <p>比如 : Br2 C2 H3 O2 <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;218.852</p>
         <form> 
             <br>
-            Chemical Formula: 
+            化学方程式: 
             <input type="text" name="Space Mode:" id="formula">
             <br>
         </form>
-        <button id="calc">Calculate</button>
+        <button id="calc">计算</button>
         <p id="step">2 * 79.904 + 2 * 12.011 + 3 * 1.008 + 2 * 15.999</p>
         <p id="answer">218.852</p>
 	</body>
@@ -36,6 +36,7 @@
                         amt += a.charAt(j);
                     }
                 }
+                if (!amt) amt = 1;
                 mass += masses[name] * parseInt(amt);
                 steps += " + " + amt + " * " + masses[name];
             }

@@ -31,14 +31,14 @@ export default function ChemistryCalc(props) {
 				key={ans}
 				sx={{ alignItems: 'flex-start' }}
 				variant="soft"
-				color="info"
+				color="primary"
 			>
 				<div>
 					<Typography fontWeight="lg" mt={0.25}>
 						{ans}
 					</Typography>
 					<Typography fontSize="sm" sx={{ opacity: 0.8 }}>
-						{'=' + steps.substring(3)}
+						{'= ' + steps.substring(3)}
 					</Typography>
 				</div>
 			</Alert>

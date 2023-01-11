@@ -1,12 +1,14 @@
-import React, { useState, Component } from "react";
+import React, { useState } from "react";
 import * as ReactDOM from "react-dom/client";
 import { CssVarsProvider } from "@mui/joy/styles";
 import Button from "@mui/joy/Button";
 import Sheet from "@mui/joy/Sheet";
 import Typography from '@mui/joy/Typography';
 import Input from '@mui/joy/Input';
-import Link from '@mui/joy/Link';
-import ChemistryCalc from './calc'
+import Divider from "@mui/joy/Divider";
+import ChemistryCalc from './calc';
+import Footer from "./footer";
+import '@fontsource/public-sans';
 
 export default function ReqApp() {
   const [inputedValue, updateInputedValue] = useState('');
@@ -51,15 +53,15 @@ export default function ReqApp() {
             onChange={
               handleChange.bind(this)
             }
-            color="info"
           />
           <Button
             sx={{ mt: 1 /* margin top */ }}
             onClick={handlePost}
-            color="info"
           >开始计算</Button>
+          <Divider />
           <ChemistryCalc formula={formula} />
         </Sheet>
+        <Footer />
       </main>
     </CssVarsProvider>
   );

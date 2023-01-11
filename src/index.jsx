@@ -8,7 +8,9 @@ import Input from '@mui/joy/Input';
 import Divider from "@mui/joy/Divider";
 import ChemistryCalc from './components/calc';
 import Footer from "./components/footer";
+import ModeToggle from "./components/modetoggle";
 import '@fontsource/public-sans';
+import { getInitColorSchemeScript } from '@mui/joy/styles';
 
 export default function ReqApp() {
   const [inputedValue, updateInputedValue] = useState('');
@@ -24,7 +26,9 @@ export default function ReqApp() {
 
   return (
     <CssVarsProvider>
+      {getInitColorSchemeScript()}
       <main>
+        <ModeToggle />
         <Sheet
           sx={{
             width: 600,

@@ -6,7 +6,7 @@ import Launch from '@mui/icons-material/Launch';
 export default function Footer() {
 	return (
 		<Typography level="body1" align="center">
-			<Typography>Made with ❤️ by Reqwey </Typography>
+			<Typography>Made with ❤️ by <b>Reqwey</b> </Typography>
 			<Link
 				variant="outlined"
 				aria-labelledby="https://github.com/Reqwey/chemistry-calculator"

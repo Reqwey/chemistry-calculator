@@ -14,7 +14,7 @@ import { getInitColorSchemeScript } from '@mui/joy/styles';
 
 export default function ReqApp() {
   const [inputedValue, updateInputedValue] = useState('');
-  const [formula, updateFormula] = useState('CaCO3');
+  const [formula, updateFormula] = useState('[Ag(NH3)2]OH');
 
   function handleChange(e) {
     updateInputedValue(e.target.value);
@@ -52,7 +52,7 @@ export default function ReqApp() {
           </div>
           <Input
             // html input attribute
-            placeholder="CaCO3"
+            placeholder="[Ag(NH3)2]OH"
             // pass down to FormLabel as children
             onChange={
               handleChange.bind(this)

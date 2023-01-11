@@ -6,8 +6,8 @@ import Sheet from "@mui/joy/Sheet";
 import Typography from '@mui/joy/Typography';
 import Input from '@mui/joy/Input';
 import Divider from "@mui/joy/Divider";
-import ChemistryCalc from './calc';
-import Footer from "./footer";
+import ChemistryCalc from './components/calc';
+import Footer from "./components/footer";
 import '@fontsource/public-sans';
 
 export default function ReqApp() {
